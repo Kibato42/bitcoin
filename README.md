@@ -1,4 +1,4 @@
-Bitcoin Core integration/staging tree
+LAB Test: Bitcoin Core integration/staging tree ; Goal: Migrate to PQC
 =====================================
 
 https://bitcoincore.org
