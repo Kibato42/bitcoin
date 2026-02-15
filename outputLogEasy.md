@@ -20,31 +20,26 @@
 }
 
 
-┌──(kibato㉿Champollion)-[~/Desktop/Thesis/bitcoin]
 └─$ ./build/bin/bitcoin-cli -datadir=/tmp/mycoin createwallet "mywallet"
 {
   "name": "mywallet"
 }
 
 
-┌──(kibato㉿Champollion)-[~/Desktop/Thesis/bitcoin]
 └─$ ./build/bin/bitcoin-cli -datadir=/tmp/mycoin getnewaddress
 mc1q0an5kdtxccs5570v5a2mntudtkxak5a9e8cs2c
 
 
-┌──(kibato㉿Champollion)-[~/Desktop/Thesis/bitcoin]
 └─$ ./build/bin/bitcoin-cli -datadir=/tmp/mycoin getnewaddress
 mc1qf5w8uacezek9xg750p0c3zjummv3k2wfs7k36q
 
 
-┌──(kibato㉿Champollion)-[~/Desktop/Thesis/bitcoin]
 └─$ ./build/bin/bitcoin-cli -datadir=/tmp/mycoin generatetoaddress 1 mc1qf5w8uacezek9xg750p0c3zjummv3k2wfs7k36q 10000000
 [
   "00c92f94f0def460bcb79899e8c4d3e35ad4818043829c511441b31ac5eae185"
 ]
 
 
-┌──(kibato㉿Champollion)-[~/Desktop/Thesis/bitcoin]
 └─$ ./build/bin/bitcoin-cli -datadir=/tmp/mycoin getbalances
 {
   "mine": {
@@ -59,7 +54,6 @@ mc1qf5w8uacezek9xg750p0c3zjummv3k2wfs7k36q
 }
 
 
-┌──(kibato㉿Champollion)-[~/Desktop/Thesis/bitcoin]
 └─$ ./build/bin/bitcoin-cli -datadir=/tmp/mycoin generatetoaddress 100 mc1qf5w8uacezek9xg750p0c3zjummv3k2wfs7k36q 10000000
 [
   "005042b0f53ba71eb8beb9f7499315c8c6b735b6fd9073c6fcd3b484c4fe58a8",
@@ -165,7 +159,6 @@ mc1qf5w8uacezek9xg750p0c3zjummv3k2wfs7k36q
 ]
 
 
-┌──(kibato㉿Champollion)-[~/Desktop/Thesis/bitcoin]
 └─$ ./build/bin/bitcoin-cli -datadir=/tmp/mycoin getbalances                                                              
 {
   "mine": {
@@ -180,12 +173,10 @@ mc1qf5w8uacezek9xg750p0c3zjummv3k2wfs7k36q
 }
 
 
-┌──(kibato㉿Champollion)-[~/Desktop/Thesis/bitcoin]
 └─$ ./build/bin/bitcoin-cli -datadir=/tmp/mycoin getbalance                                                               
 50.00000000
 
 
-┌──(kibato㉿Champollion)-[~/Desktop/Thesis/bitcoin]
 └─$ ./build/bin/bitcoin-cli -datadir=/tmp/mycoin getbalances
 {
   "mine": {
@@ -200,14 +191,12 @@ mc1qf5w8uacezek9xg750p0c3zjummv3k2wfs7k36q
 }
 
 
-┌──(kibato㉿Champollion)-[~/Desktop/Thesis/bitcoin]
 └─$ ./build/bin/bitcoin-cli -datadir=/tmp/mycoin generatetoaddress 1 mc1qf5w8uacezek9xg750p0c3zjummv3k2wfs7k36q 10000000 
 [
   "00c34f26b0c140fa4c62ba20a4f35f523672e29d165fef29e2476df4d3228483"
 ]
 
 
-┌──(kibato㉿Champollion)-[~/Desktop/Thesis/bitcoin]
 └─$ ./build/bin/bitcoin-cli -datadir=/tmp/mycoin getbalances                                                            
 {
   "mine": {
@@ -222,6 +211,5 @@ mc1qf5w8uacezek9xg750p0c3zjummv3k2wfs7k36q
 }
 
 
-┌──(kibato㉿Champollion)-[~/Desktop/Thesis/bitcoin]
 └─$ ./build/bin/bitcoin-cli -datadir=/tmp/mycoin getbalance                                                             
 100.00000000
