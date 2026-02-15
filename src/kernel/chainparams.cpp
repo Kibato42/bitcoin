@@ -94,13 +94,13 @@ public:
         // consensus.CSVHeight = 419328; // 000000000000000004a1b34462cb8aeebd5799177f7a29cf28f2d1961716b5b5
         // consensus.SegwitHeight = 481824; // 0000000000000000001c8018d9cb3b742ef25114f27563e3fc4a1902167f9893
         consensus.MinBIP9WarningHeight = 483840; // segwit activation height + miner confirmation window
-        consensus.powLimit = uint256{"00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff"};
+        consensus.powLimit = uint256{"00ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"};
         consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
         consensus.nPowTargetSpacing = 10 * 60;
         // consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.enforce_BIP94 = false;
-        consensus.fPowNoRetargeting = false;
+        consensus.fPowNoRetargeting = true;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28; //maybe
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = Consensus::BIP9Deployment::NEVER_ACTIVE;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
@@ -135,11 +135,11 @@ public:
         m_assumed_blockchain_size = 2;
         m_assumed_chain_state_size = 2;
 
-        genesis = CreateGenesisBlock(1771099660, 3272247927, 0x1d00ffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1771099660, 202, 0x2000ffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         // assert(consensus.hashGenesisBlock == uint256{"000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"});
         // assert(genesis.hashMerkleRoot == uint256{"4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"});
-        assert(consensus.hashGenesisBlock == uint256{"00000000e822dce42a5b9fb2fd9609c65140cb249f8d954bdd8701503f59d114"});
+        assert(consensus.hashGenesisBlock == uint256{"0052f569e45bf266de0127bc5a6fe12dc59c3aaf9fc5dc3e1fc2ffc48d9af359"});
         assert(genesis.hashMerkleRoot == uint256{"8f240647de69b2d43dd2d456935ea686374f702206f702b5119e5de74a99c574"});
 
         // // Note that of those which support the service bits prefix, most only support a subset of
